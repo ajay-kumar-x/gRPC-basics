@@ -2,10 +2,15 @@ Requirements -> java (java --version), maven (mvn --version)
  1. create a maven project 
  2. Add Dependency in pom.xml
  	grpc-netty-shaded   <groupId>io.grpc ------- for htt2 protocol
+	
  	protobuf-java      <groupId>com.google.protobuf ------- 
+	
  	grpc-protobuf      <groupId>io.grpc -------
+	
  	grpc-stub          <groupId>io.grpc ---Stub classes for GRPC which are exposed to developers and provides type-safe bindings.
+	
  	javax-annotation-api <groupId>javax.annotation -----
+	
  3. Add build script in pom.xml where we give the location where the .proto file is and where should Stub classes should be generated
  
         <build>
