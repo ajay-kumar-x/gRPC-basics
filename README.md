@@ -67,7 +67,7 @@ Requirements -> java (java --version), maven (mvn --version)
              string message=1;
              }
        
-  6. goto  maven-> package
+  6. goto  maven -> lifecycle-> package
        this will generate 1 Java class for the .proto file (here "Test.java") and n java grpc class for n services in the .proto file(here 1 class only  because only one service which will be "TestServiceGrpc.java") here is the "TestSeriveImplBase" which we will extend the write the logics for the endpoints
        
   7.  create a service class with any name(let "TestService") where will extend the "TestSeriveImplBase" and write the logic
