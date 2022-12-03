@@ -1,5 +1,3 @@
-# gRPC-hello-world
-
 Requirements -> java (java --version), maven (mvn --version)
  1. create a maven project 
  2. Add Dependency in pom.xml
@@ -70,8 +68,33 @@ Requirements -> java (java --version), maven (mvn --version)
              }
        
   6. goto  maven-> package
-       this will generate 1 Java class for the .proto file (here Test.java) and n java grpc class for n services in the .proto file(here 1 class only  because only one service which will be TestServiceGrpc.java) here is the TestSeriveImplBase which we will extend the write the logics for the endpoints
+       this will generate 1 Java class for the .proto file (here "Test.java") and n java grpc class for n services in the .proto file(here 1 class only  because only one service which will be "TestServiceGrpc.java") here is the "TestSeriveImplBase" which we will extend the write the logics for the endpoints
        
-       
- 	
+  7.  create a service class with any name(let "TestService") where will extend the "TestSeriveImplBase" and write the logic
+  
+       public class TestService extends TestServiceGrpc.TestServiceImplBase {
+         @Override
+    	 public void greet(Test.Empty request, StreamObserver<Test.responseMessage> responseObserver) {
+       	 Test.responseMessage.Builder response=Test.responseMessage.newBuilder();
 
+        	response.setMessage("Welcome to testing");
+
+        	responseObserver.onNext(response.build());
+        	responseObserver.onCompleted();
+   	 }
+	}
+   
+   8. final step we will set the server port and add the servie in Main class which will be entry point
+        
+        public class Main {
+   	 public static void main(String[] args) throws IOException, InterruptedException {
+         Server server= ServerBuilder.forPort(8080).addService(new TestService()).build();
+         server.start();
+
+         System.out.println("Test Server Started on port:"+server.getPort());
+
+         server.awaitTermination();
+   	 }
+	}
+ 	
+   9. run the Main class and use BloomRpc with proto file to test the microservice 
