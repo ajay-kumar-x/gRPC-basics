@@ -62,11 +62,15 @@ Requirements -> java (java --version), maven (mvn --version)
   
   5. create .proto file in resources folder(where we decided in build script) Which is the base of our microservice or project where we will define
      the servies and endpoints 
-     e.g. Test.proto
-          syntax ="proto3";                        
-          option java_package="com.example.grpc";  //location where the stub classes will be generated
-          service TestService{
-            rpc greet(Empty) returns(responseMessage);
+	
+	e.g. Test.proto
+          
+	syntax ="proto3";                        
+          
+	option java_package="com.example.grpc";  //location where the stub classes will be generated
+          
+	service TestService{
+	    rpc greet(Empty) returns(responseMessage);
             }
           message Empty{}
           message responseMessage{
