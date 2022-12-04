@@ -1,0 +1,10 @@
+syntax ="proto3";
+option java_package="com.example.grpc"; //location where the stub classes will be generated
+
+service TestService{
+  rpc greet(Empty) returns(responseMessage);
+}
+message Empty{}
+message responseMessage{
+  string message=1;
+}
