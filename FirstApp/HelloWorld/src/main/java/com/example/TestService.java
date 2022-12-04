@@ -9,7 +9,7 @@ public class TestService extends TestServiceGrpc.TestServiceImplBase {
     public void greet(Test.Empty request, StreamObserver<Test.responseMessage> responseObserver) {
         Test.responseMessage.Builder response=Test.responseMessage.newBuilder();
 
-        response.setMessage("Welcome to testing");
+        response.setMessage("Hello World");
 
         responseObserver.onNext(response.build());
         responseObserver.onCompleted();
