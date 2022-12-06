@@ -6,8 +6,11 @@ We Will do this With the help of two Microservice
 2. GrpcClient -> this will try to call the endpoint of GrpcServer.
 
 Starts with GrpcServer
+
 	1. create the maven project and add the basic dependency and build required for a Grpc
+	
 	2. create a Server.proto file in resources
+	
 	      syntax="proto3";
 	      option java_package="org.example.grpc";
 	      service TestService{
@@ -22,7 +25,9 @@ Starts with GrpcServer
 	        string message=1;
 	        int32 responseCode=2;
 	        }
+		
 	3. maven-> lifecycle-> package  this will generate the stub classes for the proto file
+	
 	4. Implement the logic for the endpoint in a new class(let TestService.java) which will extend TestServiceGrpc.TestServiceImplBase
 	    
 	    public class TestService extends TestServiceGrpc.TestServiceImplBase {
