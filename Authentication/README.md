@@ -1,4 +1,4 @@
-In this we are going to see How we can integrate Authentication with the help of JwtToken and Interceptor.
+# In this Project we are going to see How we can integrate Authentication with the help of JwtToken and Interceptor.
 
 We will demonstrate this through two microservice
 
@@ -6,7 +6,7 @@ We will demonstrate this through two microservice
  2. MyService -> Here we will implement the interceptor which will validate the signature and claim of JWT token on Metatdata if valid then only we will able to proceed to MyService app
  
  
- Starts with Authentication Service:
+# Starts with Authentication Service:
  
     1. Add the basic dependendy and build script for gRPC with <dependency of jjwt> and <dependency of jaxb-api > then right click ->maven-> reload project
     2. Auth.proto file then maven->lifecycle->package
@@ -94,7 +94,7 @@ We will demonstrate this through two microservice
     6. Now we can use BloomRpc to check our service with the help of Auth.proto file. On valid credential it will generate the JWT Token.
 
 
- Now, Creating MyService:
+# Now, Creating MyService:
      
      1. Add the basic dependency for Grpc then right click ->maven-> reload project
      
