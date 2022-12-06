@@ -1,0 +1,15 @@
+syntax="proto3";
+option java_package="org.example.grpc";
+
+service TestService{
+  rpc checkCredential(credential) returns(responseMessage);
+  //if both username and password equals then responseMessage-> success 200 else failure 400
+}
+ message credential{
+  string username=1;
+  string password=2;
+ }
+ message responseMessage{
+  string message=1;
+  int32 responseCode=2;
+ }
