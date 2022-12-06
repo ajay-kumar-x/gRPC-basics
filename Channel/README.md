@@ -5,7 +5,7 @@ We Will do this With the help of two Microservice
 1. GrpcServer -> this will implement a single endpoint
 2. GrpcClient -> this will try to call the endpoint of GrpcServer.
 
-Starts with GrpcServer
+# GrpcServer
 
 	1. create the maven project and add the basic dependency and build required for a Grpc
 	
@@ -63,7 +63,7 @@ Starts with GrpcServer
        	   }
        	   
 
-Now GrpcClient
+# GrpcClient
           
            1. create the maven project and add the basic dependency and build required for a Grpc
            2. copy the .proto file(Server.proto) from GrpcServer resources to GrpcClient resources then maven-> lifecycle-> package
