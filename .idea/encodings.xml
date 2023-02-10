@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Authentication/AuthenticationService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Authentication/AuthenticationService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Authentication/MyService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Authentication/MyService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Channel/GrpcClient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Channel/GrpcClient/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dockerization/TestApp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dockerization/TestApp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FirstApp/HelloWorld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FirstApp/HelloWorld/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

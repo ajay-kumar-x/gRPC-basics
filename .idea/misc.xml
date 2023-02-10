@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Channel/GrpcClient/pom.xml" />
+        <option value="$PROJECT_DIR$/Channel/GrpcServer/pom.xml" />
+        <option value="$PROJECT_DIR$/FirstApp/HelloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/Authentication/MyService/pom.xml" />
+        <option value="$PROJECT_DIR$/Authentication/AuthenticationService/pom.xml" />
+        <option value="$PROJECT_DIR$/Dockerization/TestApp/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />
+</project>
